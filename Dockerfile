@@ -1,3 +1,4 @@
-FROM n8nio/n8n
+FROM n8nio/n8n: latest
+ENV N8N_BASIC_AUTH_ACTIVE=true
 EXPOSE 5678
-CMD ["n8n"]
+CMD ["n8n", "start"]
